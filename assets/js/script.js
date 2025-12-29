@@ -1,5 +1,5 @@
 if (localStorage.getItem("loggedIn") !== "true") {
-    window.location.href = "login.html";
+    window.location.href = "/NTI-Project/login.html";
 }
 
 var products = JSON.parse(localStorage.getItem("products")) || [
@@ -78,7 +78,7 @@ if (form) {
 
 function logout() {
     localStorage.removeItem("loggedIn");
-    window.location.href = "../../login.html";
+    window.location.href = "../..//NTI-Project/login.html";
 }
 
 renderProducts();
